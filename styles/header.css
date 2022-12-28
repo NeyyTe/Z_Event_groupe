@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Quicksand&display=swap');
+.bigHeader {
+    width: 100%;
+    background-color: var(--blackDark);
+    position: relative;
+}
+
+.bigHeader ul {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 2%;
+}
+
+.bigHeader a {
+    text-decoration: none;
+    color: var(--lightGrey);
+}
+
+.logo {
+    max-width: 140px;
+    position: absolute;
+    top: 20%;
+    left:45%;
+}
+.associations {
+    background-color:  rgba(32, 32, 32, 1);
+    text-align: center;
+    color: white;
+}
+h2 {
+    text-align: center;
+    padding-top:5% ;
+    padding-bottom: 2.5%;
+    font-family: 'Caveat', cursive;
+}
+button {
+    line-height: 20px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    margin: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: normal;
+    background-color: rgba(32, 32, 32, 1);
+}
+.buttonsTabs {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+:hover button a {
+    background-color: #57AF37;
+}

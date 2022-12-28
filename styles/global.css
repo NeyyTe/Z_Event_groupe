@@ -1,0 +1,152 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* text-decoration: none; */
+}
+
+/* Création des variables */
+:root {
+    --firstColor: rgba(32, 32, 32, 1);
+    --secondColor: rgba(112, 208, 56, 1);
+    --thirdColor: rgba(255, 255, 255, 1);
+    --lightGrey: rgba(255, 255, 255, 0.2);
+    --dark: rgba(16, 16, 16, 1);
+    --blackDark: rgba(0, 0, 0, 1);
+}
+
+html,
+body,
+.container {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tab-content div {
+    width: 55%;
+    background-color: rgba(32, 32, 32, 1);
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    padding-bottom: 100px;
+    line-height: 1.5;
+    display: none;
+}
+
+.tab-content div.active {
+    display: block;
+}
+
+/* .middle p{
+    text-align: justify;
+} */
+.associations p , ol , ul {
+    text-align: justify;
+}
+/* ********** */
+/* Test onglet */
+.Tabs {
+    display: flex;
+    justify-content: center;
+    /* grid: 10px; */
+    gap: 10px;
+}
+.Tabs button {
+    /* border: solid 1px red; */
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 1%;
+    -webkit-border-radius: 5px;
+}
+.Tabs button:hover {
+    background: var(--secondColor);
+    cursor: pointer;
+    color: var(--thirdColor);
+}
+/* fin test onglet */
+/* ***************** */
+.Tabs a {
+    color: white;
+    text-decoration: none; 
+    padding-top: 20px;
+}
+
+.logo_Fdf {
+    max-width: 50px;
+}
+
+
+.site {
+    padding: 0.85em ;
+    background-color: var(--secondColor);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: var(--thirdColor);
+   
+}
+
+.site + p{
+    margin-top: 30px;
+}
+
+.tab3_SeaShepherd img{
+    width: 180px;
+}
+h1{
+    font-size: 4rem;
+    font-family: 'Caveat', cursive;
+    padding: 20px ;
+}
+h2{
+    font-size: 3rem;
+}
+h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    color: var(--secondColor);
+    text-align: center;
+    margin: 20px 0 20px;
+}
+.logo_lpo,.logo_Fondation_de_France {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    
+}
+a {
+    color: var(--secondColor);
+}
+.figurelpo, img{
+    width: 50%;
+    display: block;
+}
+.container_link {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    gap: 10px;
+}
+ul , ol {
+    list-style-position: inside;
+}
+/* border: solid 1px red; */
+/* Modification couleur des pourcentage */
+.chiffre h4 {
+    color: var(--secondColor);
+    font-size: 1.5rem;
+}
+.chiffre {
+    border: solid 1px var(--thirdColor);
+    border-radius: 5px;
+    display: flex;
+    margin: 20px ;
+    align-items: flex-start;
+    height: 80px;
+    padding-top: 20px ;
+    padding-bottom: 5px;
+}
