@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
-    list-style: none;
+   
 }
 
 :root{
@@ -20,29 +20,13 @@
 ==================================
               FONTS
 =================================== */
-
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cinzel&family=Cinzel+Decorative:wght@700&family=Quicksand:wght@500&display=swap');
 
-
-html, body /* <html> et <body> */
+html, body 
 {
     width: 100%;
-    /* Prend toute la largeur de la fenêtre */
-
     min-height: 100vh;
-    /* Minimum 100% de la hauteur de la vue utilisateur */
+  
 }
 
-.container /* <div class="container"> */
-{
-    width: 100%;
-    /* Toute la largeur du parent (<body>) */
-
-    height: 100%;
-    /* Toute la hauteur du parent (<body>) */
-    
-   display: flex;
-
-   flex-direction: column;
-}
 

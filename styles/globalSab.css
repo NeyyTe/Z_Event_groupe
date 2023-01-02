@@ -1,26 +1,26 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    
-}
-/* Création des variables */
-:root {
-    --firstColor: rgba(32, 32, 32, 1);
-    --secondColor: rgba(112, 208, 56, 1);
-    --thirdColor: rgba(255, 255, 255, 1);
-    --lightGrey: rgba(255, 255, 255, 0.2);
-    --dark: rgba(16, 16, 16, 1);
-    --blackDark: rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-html,
-body,
-.container {
-    width: 100%;
-    min-height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+/* Création des variables */
+:root {
+  --firstColor: rgba(32, 32, 32, 1);
+  --secondColor: rgba(112, 208, 56, 1);
+  --thirdColor: rgba(255, 255, 255, 1);
+  --lightGrey: rgba(255, 255, 255, 0.2);
+  --dark: rgba(16, 16, 16, 1);
+  --blackDark: rgba(0, 0, 0, 1);
 }
+
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
 

@@ -6,24 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEvent</title>
+
     <link rel="stylesheet" href="styles/styleSab.css">
-    <link rel="stylesheet" href="styles/asso.css">
+    <link rel="stylesheet" href="styles/globalSab.css">
+    <link rel="shortcut icon" href="./assets/favicon/zevent-favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
-    <div class="container">
-        <header class="bigHeader">
-            <h2><img class="logo" src="./resources/images/set1/zevent-logo.webp" alt="zeven"></h2>
-            <nav>
-                <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Les associations</a></li>
-                    <li><a href="">Les clips</a></li>
-                    <li><a href="">Les stats</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
+
+    <header class="header">
+        <a href="index.html"><img class="logo" src="./assets/logo,banner/zevent-logo.webp" alt="logo_z_event"></a>
+
+        <div class="icons_responsive">
+            <!-- <div>
+                    <box-icon name='home' type='solid' color='#ffffff'></box-icon>
+                </div>
+
+                <div>
+                    <box-icon name='building' color='#ffffff'></box-icon>
+                </div>
+
+                <div>
+                    <box-icon name='stats' color='#ffffff'></box-icon>
+                </div>
+
+                <div>
+                    <box-icon name='stats' color='#ffffff'></box-icon>
+                </div> -->
+        </div>
+
+        <nav class="nav_menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="AssoSab.html">Les associations</a></li>
+                <li><a href="#">Les stats</a></li>
+                <li><a href="#">Les clips</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+
+        </nav>
+
+        <button type="button" class="nav_toggle" aria-label="toggle nav">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
+
+
+
+        <div class="social_icons">
+
+            <div>
+                <a href="https://twitter.com/?lang=fr" target="_blank">
+                    <box-icon type='logo' name='twitter' color="white"></box-icon>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <box-icon name='instagram-alt' type='logo' color="white"></box-icon>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.reddit.com/" target="_blank">
+                    <box-icon name='reddit' type='logo' color="white"></box-icon>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
     <div class="associations">
         <h1>Les associations</h1>
 
@@ -37,8 +90,9 @@
             <button>The Sea Cleaners</button>
         </div>
 
+
         <div class="tab-content">
-            <div class= "tab1 active">
+            <div class="tab1 active">
                 <h2>Foire aux questions</h2>
                 <p>(Proposée par Coordination SUD, <a href="https://www.coordinationsud.org/">plate-forme nationale
                         regroupant 182 ONG françaises de solidarité internationale</a>)</p>
@@ -67,9 +121,11 @@
                 <p>Puisqu’il n’existe aucune base de données légale qui permette de comptabiliser les ONG, estimer leur
                     nombre est difficile. En France par exemple, l’étude « <a
                         href="https://www.associatheque.fr/fr/fichiers/etudes/paysage-associatif-francais.pdf">Le
-                        paysage associatif français</a> », estime, en 2019, à 60 000 le nombre d’associations œuvrant dans le
+                        paysage associatif français</a> », estime, en 2019, à 60 000 le nombre d’associations œuvrant
+                    dans le
                     secteur humanitaire, social et de la santé, sur les 1,3 million d’associations recensées en France.
-                    Coordination SUD <a href="https://www.coordinationsud.org/espace-membres/le-secteur-des-ong-francaises/">estime</a>
+                    Coordination SUD <a
+                        href="https://www.coordinationsud.org/espace-membres/le-secteur-des-ong-francaises/">estime</a>
                     à 450 le nombre d’ONG françaises gestionnaires, c’est-à-dire qui disposent d’un minimum d’outils de
                     gestion (capacité à planifier les activités, budgets prévisionnels, etc.). À l’échelle
                     internationale enfin, on estime très approximativement qu’il y a près de 10 millions d’ONG.</p>
@@ -86,37 +142,49 @@
                     organisations adhérentes ne touchent pas de gratifications financières (dividendes, actions, etc.).
                     Elles sont généralement différentes des financeurs (nous y reviendrons !). Le pilotage des ONG par
                     les personnes adhérentes (physiques ou morales) s’organise souvent autour d’assemblées générales, de
-                    conseils d’administration et de bureaux (<a href="https://www.associations.gouv.fr/la-vie-et-le-fonctionnement-de-l-association.html">comme la plupart des associations</a>).</p>
+                    conseils d’administration et de bureaux (<a
+                        href="https://www.associations.gouv.fr/la-vie-et-le-fonctionnement-de-l-association.html">comme
+                        la plupart des associations</a>).</p>
                 <p>Les ONG sont classées <a href="https://www.editionsladecouverte.fr/les_ong-9782707182081">en trois
                         catégories</a> : solidarité internationale (dont l’humanitaire), droits humains et
-                    environnement, bien que nombre d’entre elles soient aujourd’hui actives dans ces trois domaines. Elles ont
-                    plusieurs types de mission. Certaines font de l’aide humanitaire (distribution de nourriture, aide médicale
+                    environnement, bien que nombre d’entre elles soient aujourd’hui actives dans ces trois domaines.
+                    Elles ont
+                    plusieurs types de mission. Certaines font de l’aide humanitaire (distribution de nourriture, aide
+                    médicale
                     d’urgence, réponses aux catastrophes naturelles, etc.) ou de l’aide au développement (appui au
                     développement de systèmes agricoles soutenables ou de systèmes éducatifs, lutte contre les violences
                     faites aux femmes, etc.) à l’international.</p>
-                <p>D’autres sont actives, en France ou en Europe, par exemple, sur des missions d’accueil des populations
+                <p>D’autres sont actives, en France ou en Europe, par exemple, sur des missions d’accueil des
+                    populations
                     exilées ou de sensibilisation aux enjeux de développement durable et de solidarité (dans les écoles,
                     les Universités, etc.).</p>
                 <p>Enfin, certaines sont spécialisées sur des actions de plaidoyer politique, ou mènent des campagnes de
-                    mobilisation citoyenne. Ces dernières sont généralement les plus visibles <a href="https://www.lexpress.fr/economie/greenpeace-oxfam-wwf-decouvrez-le-classement-des-ong-les-plus-influentes-de-france_2177994.html">dans l’espace public et médiatique</a>.</p>
+                    mobilisation citoyenne. Ces dernières sont généralement les plus visibles <a
+                        href="https://www.lexpress.fr/economie/greenpeace-oxfam-wwf-decouvrez-le-classement-des-ong-les-plus-influentes-de-france_2177994.html">dans
+                        l’espace public et médiatique</a>.</p>
                 <p>Les plus grandes ONG mènent souvent plusieurs de ces missions.</p>
                 <h3>Comment sont-elles financées et où va l’argent ?</h3>
                 <p>Ce qui différencie aussi les ONG, c’est leur taille budgétaire, c’est-à-dire le nombre de ressources
                     qu’elles mobilisent ! Il existe de très petites ONG (on parle alors de « nano » ou « pico ONG »),
                     qui disposent de quelques dizaines de milliers d’euros par an. À l’inverse, existent aussi de très
-                    grandes ONG, aux budgets annuels de plusieurs centaines de millions d’euros par an. Et entre les deux, il y
+                    grandes ONG, aux budgets annuels de plusieurs centaines de millions d’euros par an. Et entre les
+                    deux, il y
                     a plein de cas différents !</p>
-                <p><a href="https://www.coordinationsud.org/document-ressource/nouvelle-edition-de-letude-argent-associations-de-solidarite-internationale-2016-20/">Coordination
+                <p><a
+                        href="https://www.coordinationsud.org/document-ressource/nouvelle-edition-de-letude-argent-associations-de-solidarite-internationale-2016-20/">Coordination
                         SUD montre</a> dans son étude sur les modèles socio-économiques des ONG de solidarité
                     internationale
                     que le secteur est partagé entre une quinzaine de grandes et très grandes ONG (Médecins du Monde,
-                    Action Contre la Faim, le CCFD-Terre Solidaire, etc.), et une diversité de moyennes (Solidarité Laïque,
+                    Action Contre la Faim, le CCFD-Terre Solidaire, etc.), et une diversité de moyennes (Solidarité
+                    Laïque,
                     Solthis, etc.) et plus petites ONG, beaucoup plus nombreuses (KuriOz, Fondation France Libertés,
                     Equipop, etc.).</p>
                 <p>Cette diversité reflète aussi la pluralité des sources de financement des ONG. Si les ONG françaises
                     sont, en 2020, davantage financées par les bailleurs publics (État, collectivités territoriales,
-                    agences de l’UE ou de l’ONU) à hauteur de 58 %, leurs ressources sont plurielles. Ainsi, en 2020, 43% de
-                    leurs ressources sont des ressources publiques internationales (donc non françaises), et la générosité du
+                    agences de l’UE ou de l’ONU) à hauteur de 58 %, leurs ressources sont plurielles. Ainsi, en 2020,
+                    43% de
+                    leurs ressources sont des ressources publiques internationales (donc non françaises), et la
+                    générosité du
                     public les finance à hauteur de 27% par an. Le mécénat d’entreprise représente, quant à lui, moins
                     de 5% de leurs ressources totales.</p>
                 <p>En termes de dépenses, deux grands enseignements à retenir :</p><br>
@@ -225,56 +293,64 @@
 
 
             </div>
-            <div class= "tab2">
-              <img class="fdf_logo" src="./resources/images/set1/fdf.webp" alt="logo_Fondation_de_France">
+            <div class="tab2">
+                <img class="fdf_logo" src="./resources/images/set1/fdf.webp" alt="logo_Fondation_de_France">
                 <h2>Fondation de France</h2>
-                <a class="site" href="https://www.fondationdefrance.org/fr/">Site</a>
-           
-            <p>Pour le ZEvent 2022, la Fondation de France assure la collecte des dons et le reversement
-                aux 4
-                associations bénéficiaires : LPO, Sea Shepherd, The SeaCleaners et WWF.</p>
-            <h3>La Fondation de France, premier réseau de philanthropie en France</h3>
-            <p>Chacun de nous a le pouvoir d’agir pour l’intérêt général. Cette conviction est, depuis plus de 50 ans,
-                le
-                moteur de la Fondation de France. Chaque jour, elle encourage, accompagne et transforme les envies
-                d’agir en
-                actions utiles et efficaces pour construire un monde plus apaisé, solidaire et durable. La Fondation de
-                France a développé un savoir-faire unique en s’appuyant sur les meilleurs experts, des centaines de
-                bénévoles et des milliers d’acteurs de terrain, dans tous les domaines de l’intérêt général : aide aux
-                personnes vulnérables, recherche médicale, environnement, culture, éducation…</p>
-            <p>Avec les 945 fondations qu’elle abrite, elle soutient chaque année plus de 10 000 initiatives
-                prometteuses et
-                innovantes, en France et à l’international. Indépendante et privée, elle agit grâce à la générosité des
-                donateurs.</p>
-            <h3>Quel rôle joue la Fondation de France pour le Z Event 2022 ?</h3>
-            <p>Pour cette nouvelle édition, le ZEvent 2022 regroupe pour la première fois plusieurs associations
-                bénéficiaires, ce qui complexifie la gestion de cette opération. La Fondation a une expertise reconnue
-                dans
-                la gestion de ce type d’opération.</p>
-            <p>Afin de garantir son bon déroulement, la Fondation de France assure la collecte des dons de « ZEvent pour
-                l'environnement », leur reversement de manière équitable aux 4 associations bénéficiaires et l’envoi du
-                reçu
-                fiscal aux donateurs.</p>
-            <p>La Fondation de France assurera notamment le suivi des projets menés par les associations grâce à ces
-                dons,
-                et notamment leur caractère d’intérêt général.</p>
-            <link rel="stylesheet" href="https://www.fondationdefrance.org/fr/fdf-zevent">
-          
+                <p class="container_site"><a class="site" href="https://www.fondationdefrance.org/fr/">Site</a></p>
+
+                <p>Pour le ZEvent 2022, la Fondation de France assure la collecte des dons et le reversement
+                    aux 4
+                    associations bénéficiaires : LPO, Sea Shepherd, The SeaCleaners et WWF.</p>
+                <h3>La Fondation de France, premier réseau de philanthropie en France</h3>
+                <p>Chacun de nous a le pouvoir d’agir pour l’intérêt général. Cette conviction est, depuis plus de 50
+                    ans,
+                    le
+                    moteur de la Fondation de France. Chaque jour, elle encourage, accompagne et transforme les envies
+                    d’agir en
+                    actions utiles et efficaces pour construire un monde plus apaisé, solidaire et durable. La Fondation
+                    de
+                    France a développé un savoir-faire unique en s’appuyant sur les meilleurs experts, des centaines de
+                    bénévoles et des milliers d’acteurs de terrain, dans tous les domaines de l’intérêt général : aide
+                    aux
+                    personnes vulnérables, recherche médicale, environnement, culture, éducation…</p>
+                <p>Avec les 945 fondations qu’elle abrite, elle soutient chaque année plus de 10 000 initiatives
+                    prometteuses et
+                    innovantes, en France et à l’international. Indépendante et privée, elle agit grâce à la générosité
+                    des
+                    donateurs.</p>
+                <h3>Quel rôle joue la Fondation de France pour le Z Event 2022 ?</h3>
+                <p>Pour cette nouvelle édition, le ZEvent 2022 regroupe pour la première fois plusieurs associations
+                    bénéficiaires, ce qui complexifie la gestion de cette opération. La Fondation a une expertise
+                    reconnue
+                    dans
+                    la gestion de ce type d’opération.</p>
+                <p>Afin de garantir son bon déroulement, la Fondation de France assure la collecte des dons de « ZEvent
+                    pour
+                    l'environnement », leur reversement de manière équitable aux 4 associations bénéficiaires et l’envoi
+                    du
+                    reçu
+                    fiscal aux donateurs.</p>
+                <p>La Fondation de France assurera notamment le suivi des projets menés par les associations grâce à ces
+                    dons,
+                    et notamment leur caractère d’intérêt général.</p>
+               <a href="#">En savoir plus</a>
+
             </div>
-            <div class= "tabs3">
+            <div class="tabs3">
                 <img class="seasheperd_logo" src="./resources/images/set1/seasheperd.webp" alt="seasheperd">
                 <h2>Sea Shepherd</h2>
-                 <a class="site" href="https://seashepherd.fr">Site</a>
+                <p class="container_site"><a class="site" href="https://seashepherd.fr">Site</a></p>
                 <p>Fondée en 1977 par le capitaine Paul Watson, SEA SHEPHERD est l'ONG de défense des océans la plus
                     combative au monde.</p>
                 <p>L'océan est un enjeu écologique majeur ; sa protection, un défi particulièrement important notamment
-                    en France au regard de l’énorme territoire maritime français, le deuxième plus vaste au monde avec près
+                    en France au regard de l’énorme territoire maritime français, le deuxième plus vaste au monde avec
+                    près
                     de 11 millions de kilomètres carrés.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ut3k-skQQXQ"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                 <h3>Que faisons-nous ?</h3>
+                <h3>Que faisons-nous ?</h3>
                 <p>Sea Shepherd défend activement l'océan et toutes les formes de vie marine. L'ONG a réussi à
                     développer la
                     seule Marine du monde entièrement dédiée à la protection des écosystèmes marins. Entièrement
@@ -283,7 +359,7 @@
                     cœur de métier est la lutee contre le braconnage et la surpêche mais également, la sensibilisation
                     du
                     grand public à l'ensemble des menaces qui pèsent sur l'océan les animaux marins.</p>
-                    <section class="chiffre">
+                <section class="chiffre">
                     <h4>95%</h4>
                     <p>des dons affectés aux missions de terrain</p>
                 </section>
@@ -295,7 +371,7 @@
                     <h4>8 mois</h4>
                     <p>de missions par an pour l'antenne française</p>
                 </section>
-          <h3>Où votre association agît-elle ?</h3>
+                <h3>Où votre association agît-elle ?</h3>
                 <p>Sea Shepherd France agit directement partout en France et à Mayote et participe financièrement,
                     logistiquement et humainement aux missions de Sea Shepherd Global partout dans le monde et notamment
                     en Afrique de l'Ouest, dans la lute contre la surpêche étrangère qui détruit l'écosystème local et
@@ -316,36 +392,36 @@
                 <p>La surpêche étant la pire menace qui pèse sur l'océan et le premier facteur de destruction de
                     l'écosystème marin, stopper ou réduire drastiquement sa consommation de poisson est le meilleur
                     service que l'on puisse rendre à l'océan.</p>
-         
+
 
             </div>
-            <div class= "tabs4">
+            <div class="tabs4">
                 <img class="logo_lpo" src="./resources/images/set1/lpo.webp" alt="logo_lpo">
-            <h2>LPO : sauvons la nature ensemble</h2>
-            <a class="site" href="https://www.lpo.fr/">Site</a>
-            <h3>On entend dire que la biodiversité s’effondre, mais qu’est-ce que ça veut dire concrètement ?</h3>
-            <p>Cela signifie que nous avons vu et voyons disparaitre à jamais des espèces à un rythme effréné, 100 à
-                1000 fois supérieur au rythme naturel. Certains scientifiques parlent d’une 6ème extinction de
-                masse, la cinquième extinction ayant vu s’éteindre les dinosaures et les trois quarts des espèces
-                vivantes sur Terre il y a 66 millions d’années.</p>
-            <p>Depuis 1970, les populations mondiales de vertébrés sauvages ont diminué d’environ 40% dans les
-                habitats terrestres, et de plus de 80% dans les milieux d’eaux douces. Seuls 4% de la biomasse des
-                mammifères sur la planète est aujourd’hui constituée d’animaux sauvages, contre 60% de bétail et 36%
-                d’êtres humains. Les oiseaux ne pèsent plus que 28% par rapport aux 72% de volailles d’élevage !</p>
-            <p>La situation est extrêmement grave : 75% des espèces sauvages sont susceptibles de disparaitre à
-                court terme. Les causes sont connues, elles sont toutes d’origine humaine: artificialisation et
-                destruction des milieux, pollutions diverses, surexploitation des ressources, réchauffement
-                climatique, introduction d’espèces exotiques envahissantes.</p>
-            <p>Heureusement des solutions existent. La LPO les élabore et les met en œuvre sur le terrain avec
-                l’appui de ses 65000 adhérents, 8000 bénévoles et quelques centaines de professionnels répartis sur
-                tout le territoire français. Les résultats prouvent que ça marche : des espaces naturels ont été
-                protégés, des espèces remarquables comme les cigognes, les vautours, les loutres, les castors et
-                même le loup sont revenues ! Tout un chacun peut intervenir à son niveau, dans ses choix de
-                consommation, dans ses comportements, dans son implication personnelle ou professionnelle au
-                quotidien.</p>
-            <h3>La LPO agit concrètement au plus près du terrain avec l’aide des citoyens </h3>
-            <section class="chiffre">
-                <h4>Par la connaissance</h4>
+                <h2>LPO : sauvons la nature ensemble</h2>
+                <p class="container_site"><a class="site" href="https://www.lpo.fr/">Site</a></p>
+                <h3>On entend dire que la biodiversité s’effondre, mais qu’est-ce que ça veut dire concrètement ?</h3>
+                <p>Cela signifie que nous avons vu et voyons disparaitre à jamais des espèces à un rythme effréné, 100 à
+                    1000 fois supérieur au rythme naturel. Certains scientifiques parlent d’une 6ème extinction de
+                    masse, la cinquième extinction ayant vu s’éteindre les dinosaures et les trois quarts des espèces
+                    vivantes sur Terre il y a 66 millions d’années.</p>
+                <p>Depuis 1970, les populations mondiales de vertébrés sauvages ont diminué d’environ 40% dans les
+                    habitats terrestres, et de plus de 80% dans les milieux d’eaux douces. Seuls 4% de la biomasse des
+                    mammifères sur la planète est aujourd’hui constituée d’animaux sauvages, contre 60% de bétail et 36%
+                    d’êtres humains. Les oiseaux ne pèsent plus que 28% par rapport aux 72% de volailles d’élevage !</p>
+                <p>La situation est extrêmement grave : 75% des espèces sauvages sont susceptibles de disparaitre à
+                    court terme. Les causes sont connues, elles sont toutes d’origine humaine: artificialisation et
+                    destruction des milieux, pollutions diverses, surexploitation des ressources, réchauffement
+                    climatique, introduction d’espèces exotiques envahissantes.</p>
+                <p>Heureusement des solutions existent. La LPO les élabore et les met en œuvre sur le terrain avec
+                    l’appui de ses 65000 adhérents, 8000 bénévoles et quelques centaines de professionnels répartis sur
+                    tout le territoire français. Les résultats prouvent que ça marche : des espaces naturels ont été
+                    protégés, des espèces remarquables comme les cigognes, les vautours, les loutres, les castors et
+                    même le loup sont revenues ! Tout un chacun peut intervenir à son niveau, dans ses choix de
+                    consommation, dans ses comportements, dans son implication personnelle ou professionnelle au
+                    quotidien.</p>
+                <h3>La LPO agit concrètement au plus près du terrain avec l’aide des citoyens </h3>
+                <section class="chiffre">
+                    <h4>Par la connaissance</h4>
                     <p>grâce notamment aux sciences participatives, la LPO rassemble et analyse les données naturalistes
                         depuis plusieurs dizaines d’années, ce qui permet de suivre l’évolution de l’état de
                         conservation des espèces et de guider les priorités d’action.</p>
@@ -371,20 +447,25 @@
                 <h3>A quoi vos dons vont-ils servir ? </h3>
                 <p>Vos dons vont tout simplement nous aider à protéger la biodiversité.</p>
                 <p>1 € c’est le coût du nourrissage quotidien d’un animal blessé ou affaibli en centre de soins</p>
-                <p>13 € nous permettent de protéger les oiseaux marins en collectant un sac de 20L de déchets sur la plage.</p>
+                <p>13 € nous permettent de protéger les oiseaux marins en collectant un sac de 20L de déchets sur la
+                    plage.</p>
                 <p>30€ nous permettent d’installer un nichoir pour hirondelles.</p>
                 <p>100€ c’est le coût d’acquisition de 250 m² d’espace naturel ainsi protégé.</p>
                 <section class="figurelpo">
-                   <section>
-                       <img src="./resources/images/set1/loutre.webp" alt="Quelle magnifique loutre non ?">
-                       <p>CDSLPO Aquitaine</p>
-                   </section>
-                    <section>
+                    <article>
+                        <img src="./resources/images/set1/loutre.webp" alt="Quelle magnifique loutre non ?">
+                        <p>CDSLPO Aquitaine</p>
+                    </article>
+                    <article>
                         <img src="./resources/images/set1/rapace.webp" alt="rapace">
                         <p>Bruno Berthémy</p>
-                    </section>
+                    </article>
+
+
+
+
                 </section>
-               
+
                 <h3>Des questions sur la LPO ?</h3>
                 <p>Notre expertise technique et scientifique, acquise par une présence continue sur le terrain, est
                     reconnue, tout comme la pertinence de nos analyses. En 2017, un cabinet indépendant a estimé que
@@ -395,17 +476,17 @@
                 <p>Merci au ZEvent 2022 de mettre en avant et de soutenir la protection de l’environnement.</p>
                 <p>La LPO souhaite à tous les participants un excellent week-end de divertissement utile à la planète.
                     N’hésitez pas à venir à notre rencontre pour découvrir les valeurs et les actions de la LPO !</p>
-                    <p class="liens">
-                        <a href="En savoir plus sur les actions de la LPO" target="_blank">En savoir plus sur les actions de
-                            la LPO</a> <br>
-                        <a href="Découvrir la nature avec la LPO" target="_blank">Découvrir la nature avec la LPO</a> <br>
-                        <a href="S’engager aux côtés de la LPO" target="_blank">S’engager aux côtés de la LPO</a> <br>
-                    </p>
+                <p class="liens">
+                    <a href="En savoir plus sur les actions de la LPO" target="_blank">En savoir plus sur les actions de
+                        la LPO</a> <br>
+                    <a href="Découvrir la nature avec la LPO" target="_blank">Découvrir la nature avec la LPO</a> <br>
+                    <a href="S’engager aux côtés de la LPO" target="_blank">S’engager aux côtés de la LPO</a> <br>
+                </p>
             </div>
-            <div class= "tabs5">
-                <img class= "wwf" src="./resources/images/set1/wwf.webp" alt="WWF">
+            <div class="tabs5">
+                <img class="wwf" src="./resources/images/set1/wwf.webp" alt="WWF">
                 <h2>WWF</h2>
-                <a class="site" href="https://www.wwf.fr/" target="_blank">Site</a>
+                <p class="container_site"><a class="site" href="https://www.wwf.fr/" target="_blank">Site</a></p>
                 <p>Le WWF c’est une (très) grosse équipe de pandas qui travaille dans plus de 100 pays partout dans
                     le monde pour protéger la planète, c’est-à-dire protéger la nature et tous ses êtres vivants.
                     Une mission ambitieuse et vitale qui nécessite d’agir sur tous les fronts : climat, énergie,
@@ -420,7 +501,7 @@
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <p class="En savoir plus">En savoir plus sur le WWF</p>
+                <p class="container_link"><a href="#">En savoir plus sur la WWF</a></p>
                 <h3>Que faisons-nous ?</h3>
                 <p>Notre action repose sur une conviction profonde : le bien-être des Hommes ainsi que la bonne
                     santé de notre planète sont étroitement liés. Tous ensemble on peut y arriver, c’est pourquoi
@@ -441,8 +522,8 @@
                     autour des priorités suivantes : l'énergie et le climat, l’agriculture et l’alimentation,
                     l'océan, les forêts, la vie sauvage, l’eau douce, et enfin la finance verte.</p>
                 <p class="container_link">
-                     <a  href="https://www.wwf.fr/champs-daction">Nos champs
-                            d'action</a>
+                    <a href="https://www.wwf.fr/champs-daction">Nos champs
+                        d'action</a>
                     <a href="https://www.wwf.fr/champs-daction">S'engager ensemble</a>
                 </p>
                 <section class="chiffre">
@@ -454,182 +535,195 @@
                         ainsi que les changements climatiques et la pollution exercent une pression sans précédent
                         sur la nature. Un nouvel état de santé de la biodiversité dans le monde sera publié par le
                         WWF en octobre 2022.</p>
-                </section>    
+                </section>
                 <section class="chiffre">
                     <h4>10 millions</h4>
                     <p>Dix millions d’hectares (soit l’équivalent de la surface du Portugal ou de plus de 14
                         millions de terrains de football) de forêts disparaissent chaque année, principalement
                         en zone tropicale. Pourtant, les forêts abritent 80% de la biodiversité terrestre et
                         permettent de subvenir aux besoins de 1,6 milliard de personnes.</p>
-            </section> 
-            <section class="chiffre">
-                        <h4>41 000</h4>
-                        <p>Aujourd’hui en 2022, 41000 espèces d’animaux et de plantes sauvages sont menacées. Ce
-                            chiffre est établi par l'Union internationale pour la conservation de la nature
-                            (UICN). Le WWF se mobilise pour la vie sauvage en choisissant de protéger les
-                            espèces les plus emblématiques et les plus vulnérables comme les éléphants, les
-                            tigres, les lynx etc. Nous nous concentrons sur celles qui jouent un rôle majeur au
-                            sein des écosystèmes naturels. En les protégeant, nous sauvegardons aussi les
-                            espèces avec lesquelles elles cohabitent et les paysages ou les milieux qui les
-                            accueillent.</p>
-            </section> 
-                        <p class="container_link"><a href="https://www.wwf.fr/agir-au-quotidien">Agir au
-                                quotidien</a></p>
-                        <h2>FAQ</h2>
-                        <h3>Où votre association agit-elle ?</h3>
-                        <p>Le WWF est actif dans plus de 100 pays grâce à plus de 12 000 programmes de
-                            conservation partout dans le monde. Le bureau français du WWF œuvre en priorité en
-                            Guyane, au Cerrado (Brésil), en Méditerranée ainsi qu’en Afrique du Nord, au Congo,
-                            à Madagascar, dans la région du Mékong et en Nouvelle Calédonie.</p>
-                        <h3>Aujourd’hui quelle est votre principale problématique sur le plan environnemental ?
-                        </h3>
-                        <p>Il y a quelques jours, nous apprenions encore la disparition d'une nouvelle espèce :
-                            le dugong s’est éteint le long des côtes de Chine. En parallèle, cet été, la
-                            canicule, les feux, la sécheresse, les intempéries ont plus que jamais ravagé la
-                            France et le monde entier. Conséquence, une agriculture en déclin, des lacs,
-                            rivières, fleuves complètement asséchés, un accès à l’eau douce difficile et des
-                            forêts qui peinent à tenir leur rôle de protection de la biodiversité. La voilà
-                            notre principale problématique environnementale: l’urgence ! Il faut agir
-                            maintenant, ce n’est plus seulement les générations futures qu’il faut protéger,
-                            mais bien la population actuelle, qui voit déjà son quotidien largement remué par
-                            les conséquences de la crise écologique.</p>
-                        <h3>Quel est votre projet phare sur 2022 ?</h3>
-                        <p>En 2022, le WWF s’est tout particulièrement mobilisé pour protéger des forêts, poumon
-                            vert de la planète. Les forêts nous offrent une multitude de services écologiques,
-                            économiques et sociaux et abritent plus de la moitié de la faune et la flore
-                            terrestre. Pourtant, 8 à 10 millions d’hectares de forêts naturelles disparaissent
-                            chaque année, notamment en zone tropicale. La consommation des européens est un
-                            moteur clé de la déforestation tropicale et de la destruction des écosystèmes dans
-                            le monde. En 2022, le WWF se mobilise à travers la campagne Together4Forests (T4F)
-                            pour demander à l’Union européenne d’adopter une législation contraignante qui
-                            garantisse que les matières premières et produits mis sur le marché européen ne
-                            soient pas liés à la déforestation.</p>
-                            <h3>Quelles actions pourriez-vous mener suite à votre participation au Z Event ?</h3>
-                            <p>Selon l’importance des dons collectés, vous pourriez nous aider à :</p>
-                            <ul>
-                                <li>protéger les éléphants dans le bassin du Congo. L'éléphant d'Afrique est en
-                                    danger d'extinction selon l’UICN. Chassés par les braconniers, disposant de
-                                    moins en moins d’espaces pour vivre, les éléphants d’Afrique font face à un
-                                    nouveau danger. Au centre du bassin du Congo, la déforestation, le braconnage et
-                                    la raréfaction des fruits en forêt poussent les éléphants à s'approcher de plus
-                                    en plus des villages. Là ils dévastent les cultures, et occasionnent des
-                                    blessures parfois mortelles aux villageois. Pour se protéger, ceux-ci peuvent
-                                    organiser des représailles mortelles contre les animaux. Pour éviter cela, les
-                                    dons du Z Event permettront au WWF d'agir à la source, en protégeant les forêts
-                                    et en luttant contre le trafic illégal d'ivoire. Les fonds pourront également
-                                    servir à mettre en place une palette de solutions variées, pour réduire les
-                                    conflits entre les hommes et la faune sauvage. Nous pourrons par exemple
-                                    financer un système local d'assurance, grâce auquel les cultivateurs recevront
-                                    une indemnisation suite aux dégâts provoqués par les éléphants. Une méthode qui
-                                    a déjà fait ses preuves en Asie, face aux attaques de tigres et qui permet de
-                                    garantir la sécurité des animaux sauvages sans mettre en péril les moyens de
-                                    subsistance des populations locales qui vivent à leurs côtés.</li>        
-                                    <li>préserver des mangroves à Madagascar Les mangroves sont un milieu naturel situé
-                                        entre la terre et la mer. Composées d’arbres et de végétation poussant dans la
-                                        vase, elles sont indispensables pour les espèces marines et côtières autant que
-                                        pour les populations locales à qui elles procurent nourriture, bois mais aussi
-                                        protection contre les cyclones et l’érosion marine. Malheureusement, leur
-                                        surexploitation et le changement climatique les détériorent de manière
-                                        considérable. Grâce aux dons du Z event le WWF pourra former et accompagner des
-                                        groupes de villageois pour replanter et gérer durablement des milliers
-                                        d’hectares de mangrove dans la région du fleuve Manambolo et ainsi éviter leur
-                                        surexploitation.</li>
-                                </ul>
-                                <h3>Comment pouvons-nous vous aider ?</h3>
-                                <p>Aujourd’hui, pour continuer de mener à bien toutes nos actions en faveur de la
-                                    planète et entreprendre de nouveaux combats, nous avons besoin du soutien de toutes
-                                    et tous. Chaque geste compte. Vous pouvez par exemple relayer et parler de nos
-                                    campagnes autour de vous et sur vos réseaux sociaux. Aidez-nous aussi à poursuivre
-                                    nos actions de conservation et de sensibilisation au plus près du terrain en faisant
-                                    un don ou en devenant bénévoles pour le WWF.</p>
-                                <h3>Comment je passe à l’action dans mon quotidien ?</h3>
-                                <p>La première chose à faire c’est adopter les bonnes habitudes dans son quotidien:
-                                    mangez mieux (une alimentation avec moins de protéines animales et qui favorise les
-                                    circuits courts), déplacez-vous autrement (favorisez autant que possible les modes
-                                    de transports en commun ou mobilité douce comme le vélo), optimisez votre
-                                    consommation énergétique et numérique, réduisez vos déchets etc. Un ensemble de
-                                    bonnes pratiques que vous retrouverez sur le site WAG (We act for good) qui vous
-                                    accompagnera et vous guidera pour commencer vos premiers défis.</p>
-                                <h3>Comment je peux réduire l’impact de ma consommation numérique ?</h3>
-                                <p>En tant que gamers et/ou consommateurs vorace d’internet et de numérique, il est
-                                    important d’avoir en tête qu’internet dans le monde aujourd’hui, c’est : 9 milliards
-                                    d’appareils, dont 2 milliards de smartphones, 1 milliard d’ordinateurs, 5 à 7
-                                    milliards d’objets connectés, 45 millions de serveurs... Des chiffres qui donnent le
-                                    tournis et qui ont un poids considérable sur l'environnement. Ensemble, nous pouvons
-                                    opter pour un numérique plus durable et raisonné en adoptant quelques réflexes:</p>
-                                <ul>
-                                    <li>Rallonger l’espérance de vie de notre matériel : garder le plus longtemps
-                                        possible ses équipements numériques (>4 ans), opter pour du reconditionné plutôt
-                                        que du neuf, supprimer tous les logiciels inutiles, réparer et réutiliser avant
-                                        de jeter, donner à un acteur du réemploi, recycler en dernière option.</li>
-                                    <li>Limiter sa consommation énergétique : Mettre en veille son ordinateur au bout de
-                                        3 minutes sans utilisation, éviter d’envoyer trop de mails et limiter les
-                                        pièces-jointes et le nombre de personnes en copie (envoyer un e-mail consomme
-                                        autant d'énergie que de le stocker pendant 1 an), faire régulièrement le tri
-                                        dans ses mails et supprimer tous ceux qui sont inutiles, supprimer les SPAMS
-                                        automatiquement, stocker localement plutôt que de recourir au cloud, enregistrer
-                                        en favoris les sites recherchés régulièrement plutôt que de laisser de nombreux
-                                        onglets ouverts en permanence, éteindre sa box et le boîtier TV etc.</li>
-                                </ul>                                            
+                </section>
+                <section class="chiffre">
+                    <h4>41 000</h4>
+                    <p>Aujourd’hui en 2022, 41000 espèces d’animaux et de plantes sauvages sont menacées. Ce
+                        chiffre est établi par l'Union internationale pour la conservation de la nature
+                        (UICN). Le WWF se mobilise pour la vie sauvage en choisissant de protéger les
+                        espèces les plus emblématiques et les plus vulnérables comme les éléphants, les
+                        tigres, les lynx etc. Nous nous concentrons sur celles qui jouent un rôle majeur au
+                        sein des écosystèmes naturels. En les protégeant, nous sauvegardons aussi les
+                        espèces avec lesquelles elles cohabitent et les paysages ou les milieux qui les
+                        accueillent.</p>
+                </section>
+                <p class="container_link"><a href="https://www.wwf.fr/agir-au-quotidien">Agir au
+                        quotidien</a></p>
+                <h2>FAQ</h2>
+                <h3>Où votre association agit-elle ?</h3>
+                <p>Le WWF est actif dans plus de 100 pays grâce à plus de 12 000 programmes de
+                    conservation partout dans le monde. Le bureau français du WWF œuvre en priorité en
+                    Guyane, au Cerrado (Brésil), en Méditerranée ainsi qu’en Afrique du Nord, au Congo,
+                    à Madagascar, dans la région du Mékong et en Nouvelle Calédonie.</p>
+                <h3>Aujourd’hui quelle est votre principale problématique sur le plan environnemental ?
+                </h3>
+                <p>Il y a quelques jours, nous apprenions encore la disparition d'une nouvelle espèce :
+                    le dugong s’est éteint le long des côtes de Chine. En parallèle, cet été, la
+                    canicule, les feux, la sécheresse, les intempéries ont plus que jamais ravagé la
+                    France et le monde entier. Conséquence, une agriculture en déclin, des lacs,
+                    rivières, fleuves complètement asséchés, un accès à l’eau douce difficile et des
+                    forêts qui peinent à tenir leur rôle de protection de la biodiversité. La voilà
+                    notre principale problématique environnementale: l’urgence ! Il faut agir
+                    maintenant, ce n’est plus seulement les générations futures qu’il faut protéger,
+                    mais bien la population actuelle, qui voit déjà son quotidien largement remué par
+                    les conséquences de la crise écologique.</p>
+                <h3>Quel est votre projet phare sur 2022 ?</h3>
+                <p>En 2022, le WWF s’est tout particulièrement mobilisé pour protéger des forêts, poumon
+                    vert de la planète. Les forêts nous offrent une multitude de services écologiques,
+                    économiques et sociaux et abritent plus de la moitié de la faune et la flore
+                    terrestre. Pourtant, 8 à 10 millions d’hectares de forêts naturelles disparaissent
+                    chaque année, notamment en zone tropicale. La consommation des européens est un
+                    moteur clé de la déforestation tropicale et de la destruction des écosystèmes dans
+                    le monde. En 2022, le WWF se mobilise à travers la campagne Together4Forests (T4F)
+                    pour demander à l’Union européenne d’adopter une législation contraignante qui
+                    garantisse que les matières premières et produits mis sur le marché européen ne
+                    soient pas liés à la déforestation.</p>
+                <h3>Quelles actions pourriez-vous mener suite à votre participation au Z Event ?</h3>
+                <p>Selon l’importance des dons collectés, vous pourriez nous aider à :</p>
+                <ul>
+                    <li>protéger les éléphants dans le bassin du Congo. L'éléphant d'Afrique est en
+                        danger d'extinction selon l’UICN. Chassés par les braconniers, disposant de
+                        moins en moins d’espaces pour vivre, les éléphants d’Afrique font face à un
+                        nouveau danger. Au centre du bassin du Congo, la déforestation, le braconnage et
+                        la raréfaction des fruits en forêt poussent les éléphants à s'approcher de plus
+                        en plus des villages. Là ils dévastent les cultures, et occasionnent des
+                        blessures parfois mortelles aux villageois. Pour se protéger, ceux-ci peuvent
+                        organiser des représailles mortelles contre les animaux. Pour éviter cela, les
+                        dons du Z Event permettront au WWF d'agir à la source, en protégeant les forêts
+                        et en luttant contre le trafic illégal d'ivoire. Les fonds pourront également
+                        servir à mettre en place une palette de solutions variées, pour réduire les
+                        conflits entre les hommes et la faune sauvage. Nous pourrons par exemple
+                        financer un système local d'assurance, grâce auquel les cultivateurs recevront
+                        une indemnisation suite aux dégâts provoqués par les éléphants. Une méthode qui
+                        a déjà fait ses preuves en Asie, face aux attaques de tigres et qui permet de
+                        garantir la sécurité des animaux sauvages sans mettre en péril les moyens de
+                        subsistance des populations locales qui vivent à leurs côtés.</li>
+                    <li>préserver des mangroves à Madagascar Les mangroves sont un milieu naturel situé
+                        entre la terre et la mer. Composées d’arbres et de végétation poussant dans la
+                        vase, elles sont indispensables pour les espèces marines et côtières autant que
+                        pour les populations locales à qui elles procurent nourriture, bois mais aussi
+                        protection contre les cyclones et l’érosion marine. Malheureusement, leur
+                        surexploitation et le changement climatique les détériorent de manière
+                        considérable. Grâce aux dons du Z event le WWF pourra former et accompagner des
+                        groupes de villageois pour replanter et gérer durablement des milliers
+                        d’hectares de mangrove dans la région du fleuve Manambolo et ainsi éviter leur
+                        surexploitation.</li>
+                </ul>
+                <h3>Comment pouvons-nous vous aider ?</h3>
+                <p>Aujourd’hui, pour continuer de mener à bien toutes nos actions en faveur de la
+                    planète et entreprendre de nouveaux combats, nous avons besoin du soutien de toutes
+                    et tous. Chaque geste compte. Vous pouvez par exemple relayer et parler de nos
+                    campagnes autour de vous et sur vos réseaux sociaux. Aidez-nous aussi à poursuivre
+                    nos actions de conservation et de sensibilisation au plus près du terrain en faisant
+                    un don ou en devenant bénévoles pour le WWF.</p>
+                <h3>Comment je passe à l’action dans mon quotidien ?</h3>
+                <p>La première chose à faire c’est adopter les bonnes habitudes dans son quotidien:
+                    mangez mieux (une alimentation avec moins de protéines animales et qui favorise les
+                    circuits courts), déplacez-vous autrement (favorisez autant que possible les modes
+                    de transports en commun ou mobilité douce comme le vélo), optimisez votre
+                    consommation énergétique et numérique, réduisez vos déchets etc. Un ensemble de
+                    bonnes pratiques que vous retrouverez sur le site WAG (We act for good) qui vous
+                    accompagnera et vous guidera pour commencer vos premiers défis.</p>
+                <h3>Comment je peux réduire l’impact de ma consommation numérique ?</h3>
+                <p>En tant que gamers et/ou consommateurs vorace d’internet et de numérique, il est
+                    important d’avoir en tête qu’internet dans le monde aujourd’hui, c’est : 9 milliards
+                    d’appareils, dont 2 milliards de smartphones, 1 milliard d’ordinateurs, 5 à 7
+                    milliards d’objets connectés, 45 millions de serveurs... Des chiffres qui donnent le
+                    tournis et qui ont un poids considérable sur l'environnement. Ensemble, nous pouvons
+                    opter pour un numérique plus durable et raisonné en adoptant quelques réflexes:</p>
+                <ul>
+                    <li>Rallonger l’espérance de vie de notre matériel : garder le plus longtemps
+                        possible ses équipements numériques (>4 ans), opter pour du reconditionné plutôt
+                        que du neuf, supprimer tous les logiciels inutiles, réparer et réutiliser avant
+                        de jeter, donner à un acteur du réemploi, recycler en dernière option.</li>
+                    <li>Limiter sa consommation énergétique : Mettre en veille son ordinateur au bout de
+                        3 minutes sans utilisation, éviter d’envoyer trop de mails et limiter les
+                        pièces-jointes et le nombre de personnes en copie (envoyer un e-mail consomme
+                        autant d'énergie que de le stocker pendant 1 an), faire régulièrement le tri
+                        dans ses mails et supprimer tous ceux qui sont inutiles, supprimer les SPAMS
+                        automatiquement, stocker localement plutôt que de recourir au cloud, enregistrer
+                        en favoris les sites recherchés régulièrement plutôt que de laisser de nombreux
+                        onglets ouverts en permanence, éteindre sa box et le boîtier TV etc.</li>
+                </ul>
             </div>
-            <div class= "tabs6">
-                <img class= "tftp_logo" src="./resources/images/set1/tftp.webp" alt="TimeForThePlanet">
+            <div class="tabs6">
+                <img class="tftp_logo" src="./resources/images/set1/tftp.webp" alt="TimeForThePlanet">
                 <h2>Time For The Planet</h2>
-                <a class="site" href="https://join-time.com/fr" target="_blank">Site</a>
+                <p class="container_site"><a class="site" href="https://join-time.com/fr" target="_blank">Site</a></p>
                 <p>Time for the Planet® est un mouvement citoyen né en décembre 2019.</p>
-                <p>Le projet s'est constitué suite aux différents rapports du Groupe d'experts intergouvernemental sur l'évolution du climat (GIEC) qui compile des dizaines de milliers d'études sur le climat et issues de tous les lieux de recherche scientifique de la planète.</p>
-                <p>Dans ses conclusions du "Rapport à l'intention des décideurs" de 2019, celui ci indique : "La limitation des risques liés à un réchauffement planétaire de 1,5 °C dans le contexte du développement durable et de la lutte contre la pauvreté implique des transitions systémiques, lesquelles peuvent être stimulées par une hausse des investissements dans les mesures d’adaptation et d’atténuation, la mise en place d’instruments de gouvernance, l’accélération des innovations technologiques et l’évolution des comportements".</p>
-                
-                <p>Initié par un groupe d'amis ayant acquis des compétences dans la création d'entreprises pendant 12 ans, Time for the Planet® s'atèle donc à la partie "accélération des innovations" (mais pas seulement technologiques : on élargit le champ d'action). Le
-                domaine de Time for the Planet® est volontairement limité à la problématique duréchauffement climatique, car comme disait l'une de nos grands-mères : "à vouloir tout faire, on ne fait rien".</p> 
-                
-                <p>Time for the Planet® a pour mission de détecter et diffuser des innovations permettant de réduire les émissions de gaz à effet de serre à l'échelle mondiale. Pour cela, elle transforme des solutions en entreprises puis vise à partager gratuitement celles ci selon les principes de l'open source.</p>
+                <p>Le projet s'est constitué suite aux différents rapports du Groupe d'experts intergouvernemental sur
+                    l'évolution du climat (GIEC) qui compile des dizaines de milliers d'études sur le climat et issues
+                    de tous les lieux de recherche scientifique de la planète.</p>
+                <p>Dans ses conclusions du "Rapport à l'intention des décideurs" de 2019, celui ci indique : "La
+                    limitation des risques liés à un réchauffement planétaire de 1,5 °C dans le contexte du
+                    développement durable et de la lutte contre la pauvreté implique des transitions systémiques,
+                    lesquelles peuvent être stimulées par une hausse des investissements dans les mesures d’adaptation
+                    et d’atténuation, la mise en place d’instruments de gouvernance, l’accélération des innovations
+                    technologiques et l’évolution des comportements".</p>
 
-                            <p>Dans sa forme juridique, son statut est unique puisque c'est une société commerciale mais
-                                qui ne distribue pas de bénéfices (comme une association). Ceci est juridiquement
-                                encadré par ses statuts. Cela en fait donc une société commerciale à but non lucratif.
-                                Nous souhaitions cela car nous souhaitions que tout le monde puisse devenir
-                                copropriétaire de Time for the Planet®. us pensons que dans un monde qui est extrêmement
-                                fragile, l'argent doit être utilisé pour régler des problèmes. Il doit redevenir un
-                                moyen d'action et non une fin en soi. Globalement, c'est une forme qui reprend des
-                                forces des associations et des sociétés mais avec aucun avantage particulier : pas de
-                                rémunération et pas de réduction d'impôts.</p>
-                 <p>Pour détecter et sélectionner des innovations, Time for the Planet® utilise
-                                    l'intelligence collective. En septembre 2022, près de 6 000 personnes sont formées pour
-                                    évaluer le potentiel des innovations que nous recevons. Celle ci reçoivent plusieurs
-                                    dizaines de notes. Les meilleures sont alors soumises à un comité scientifique qui
-                                    vérifie la faisabilité technique de ces innovations. Ensuite, avec celles passant le
-                                    filtre, on effectue des vérifications juridiques et économiques. Enfin, les innovations
-                                    dont nous estimons qu'elles ont un gros potentiel sont soumises en Assemblée générale
-                                    pour recevoir un vote validant des investissements financiers.</p>
-    
-                                <p>Enfin, Time for the Planet® dispose d'une énorme communauté active et joyeuse, que nous
-                                    surnommons la Galaxie de l'Action. Tout le monde peut en faire partie, qu'il soit
-                                    actionnaire ou non. Pour cela il s'agit simplement de venir se former une heure pour
-                                    comprendre comment aider le projet pour réussir sa mission. Voici le lien :
-                                    https://join-time.com/fr/galaxy Nous pensons qu'il faut "apéroïser" la lutte contre le
-                                    changement climatique, c'est à dire rendre conviviale et joyeuse la mise en action de
-                                    chacun et chacune. L'enthousiasme et la positivité sont des outils importants, surtout
-                                    lorsqu'il s'agit de régler des problème aussi grands.</p>
+                <p>Initié par un groupe d'amis ayant acquis des compétences dans la création d'entreprises pendant 12
+                    ans, Time for the Planet® s'atèle donc à la partie "accélération des innovations" (mais pas
+                    seulement technologiques : on élargit le champ d'action). Le
+                    domaine de Time for the Planet® est volontairement limité à la problématique duréchauffement
+                    climatique, car comme disait l'une de nos grands-mères : "à vouloir tout faire, on ne fait rien".
+                </p>
 
-                                    <p>Pour en savoir plus, tu peux visiter notre site internet qui contient énormément
-                                        d'informations : www.join-time.com (notamment dans la partie "tout savoir" et
-                                        "innovations"). Tu peux également acheter pour 5 euros le petit livre manifeste qui
-                                        explique notre état d'esprit et notre philosophie (il est vendu à prix coûtant sur le
-                                        site). Enfin, tous les jeudis, nous faisons une FAQ en live sur Twitch, Facebook,
-                                        Youtube et Linkedin de 12h à 13h. Pense à t'abonner pour ne pas les louper !</p>
-        
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/l4AHBjjokY4"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                <p>Time for the Planet® a pour mission de détecter et diffuser des innovations permettant de réduire les
+                    émissions de gaz à effet de serre à l'échelle mondiale. Pour cela, elle transforme des solutions en
+                    entreprises puis vise à partager gratuitement celles ci selon les principes de l'open source.</p>
+
+                <p>Dans sa forme juridique, son statut est unique puisque c'est une société commerciale mais
+                    qui ne distribue pas de bénéfices (comme une association). Ceci est juridiquement
+                    encadré par ses statuts. Cela en fait donc une société commerciale à but non lucratif.
+                    Nous souhaitions cela car nous souhaitions que tout le monde puisse devenir
+                    copropriétaire de Time for the Planet®. us pensons que dans un monde qui est extrêmement
+                    fragile, l'argent doit être utilisé pour régler des problèmes. Il doit redevenir un
+                    moyen d'action et non une fin en soi. Globalement, c'est une forme qui reprend des
+                    forces des associations et des sociétés mais avec aucun avantage particulier : pas de
+                    rémunération et pas de réduction d'impôts.</p>
+                <p>Pour détecter et sélectionner des innovations, Time for the Planet® utilise
+                    l'intelligence collective. En septembre 2022, près de 6 000 personnes sont formées pour
+                    évaluer le potentiel des innovations que nous recevons. Celle ci reçoivent plusieurs
+                    dizaines de notes. Les meilleures sont alors soumises à un comité scientifique qui
+                    vérifie la faisabilité technique de ces innovations. Ensuite, avec celles passant le
+                    filtre, on effectue des vérifications juridiques et économiques. Enfin, les innovations
+                    dont nous estimons qu'elles ont un gros potentiel sont soumises en Assemblée générale
+                    pour recevoir un vote validant des investissements financiers.</p>
+
+                <p>Enfin, Time for the Planet® dispose d'une énorme communauté active et joyeuse, que nous
+                    surnommons la Galaxie de l'Action. Tout le monde peut en faire partie, qu'il soit
+                    actionnaire ou non. Pour cela il s'agit simplement de venir se former une heure pour
+                    comprendre comment aider le projet pour réussir sa mission. Voici le lien :
+                    https://join-time.com/fr/galaxy Nous pensons qu'il faut "apéroïser" la lutte contre le
+                    changement climatique, c'est à dire rendre conviviale et joyeuse la mise en action de
+                    chacun et chacune. L'enthousiasme et la positivité sont des outils importants, surtout
+                    lorsqu'il s'agit de régler des problème aussi grands.</p>
+
+                <p>Pour en savoir plus, tu peux visiter notre site internet qui contient énormément
+                    d'informations : www.join-time.com (notamment dans la partie "tout savoir" et
+                    "innovations"). Tu peux également acheter pour 5 euros le petit livre manifeste qui
+                    explique notre état d'esprit et notre philosophie (il est vendu à prix coûtant sur le
+                    site). Enfin, tous les jeudis, nous faisons une FAQ en live sur Twitch, Facebook,
+                    Youtube et Linkedin de 12h à 13h. Pense à t'abonner pour ne pas les louper !</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l4AHBjjokY4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
             </div>
-            <div class= "tabs7" >
+            <div class="tabs7">
                 <img class="theseacleaners_logo" src="./resources/images/set1/theseacleaners.webp" alt="theseacleaners">
                 <h2>The SeaCleaners : Mobilisation générale pour débarasser les océans de la pollution
                     plastique</h2>
-                <a class="site" href="https://theseacleaners.org" target="_blank">Site</a>
+                <p class="container_site"><a class="site" href="https://theseacleaners.org" target="_blank">Site</a></p>
                 <p>Chaque année, 9 à 14 millions de tonnes de déchets plastiques sont déversées dans les
                     océans. 80% de cette pollution provient de la terre, acheminée par les fleuves et les
                     rivières. Concrètement, cela veut dire que, pendant les 3 jours du ZEvent, plus de 115
@@ -639,55 +733,89 @@
                 <p>Lutter contre cette pollution tous les jours, sur tous les fronts, c’est le combat de The
                     SeaCleaners depuis sa création en 2016.</p>
 
-                <p>Pour tout comprendre sur les causes de cette pollution et les moyens de lutter, il y a notre <a href="https://smartlink.ausha.co/les-deferlantes?utm_source=princ&utm_medium=owned&utm_campaign=deferlante" target="_blank">podcast enquête en 6 épisodes : Les Déferlantes, à écouter sur toutes les plateformes d’écoute</a>.</p>
+                <p>Pour tout comprendre sur les causes de cette pollution et les moyens de lutter, il y a notre <a
+                        href="https://smartlink.ausha.co/les-deferlantes?utm_source=princ&utm_medium=owned&utm_campaign=deferlante"
+                        target="_blank">podcast enquête en 6 épisodes : Les Déferlantes, à écouter sur toutes les
+                        plateformes d’écoute</a>.</p>
                 <h3>Pourquoi c’est grave et pourquoi ça nous concerne tous ?</h3>
                 <p>Parce que la pollution plastique océanique est une catastrophe écologique majeure :</p>
                 <ul>
                     <li>Elle détruit les écosystèmes marins et tue chaque année 1,5 million d’animaux marins.</li>
-                    <li>Elle est omniprésente et impacte 90% des espèces marines, du plancton aux grands prédateurs, soit 3800 espèces au total.</li>
-                    <li>Elle réduit la capacité des océans à produire de l’oxygène et à jouer leur rôle de puits de carbone et de régulateur des températures.</li>
+                    <li>Elle est omniprésente et impacte 90% des espèces marines, du plancton aux grands prédateurs,
+                        soit 3800 espèces au total.</li>
+                    <li>Elle réduit la capacité des océans à produire de l’oxygène et à jouer leur rôle de puits de
+                        carbone et de régulateur des températures.</li>
                     <li>Elle contribue au réchauffement climatique.</li>
                     <li>Elle passe dans la chaine alimentaire et menace la santé humaine.</li>
-                    <li>Elle renforce les inégalités économiques et sociales en affectant directement les moyens de subsistance des communautés dépendantes de l’économie de la mer.</li>
-               </ul>
-               <a href="https://www.theseacleaners.org/fr/la-pollution-plastique/" target="_blank">Pour tout savoir sur les faits et chiffres de la pollution plastique, c’est par ici.</a>
-               <h3>Comment nous combattons la pollution plastique ?</h3>
-               <p>Chez The SeaCleaners, nous avons fait le choix de l’action concrète pour dire stop aux déchets qui plastifient nos océans :</p>
-               <ol>
-                <li>Une action corrective de dépollution en mer, avec le MANTA, un bateau-usine pionnier qui prendra la mer en 2025, et collectera, traitera et valorisera les macrodéchets flottants dans les zones de forte concentration : estuaires, embouchures des fleuves les plus polluées, eaux côtières. Autonome énergétiquement à près de 75%, propulsé par des énergies renouvelables, certifié par un organisme indépendant, le MANTA sera aussi un bateau de recherche scientifique et une plateforme de sensibilisation.</li>
-                <li>Une action curative de dépollution dans les fleuves et rivières, avec nos bateaux MOBULA, qui interceptent les déchets avant qu’ils atteignent l’océan et dont le 1er est en cours de déploiement dans la région de Dempasar (Bali, Indonésie).</li>
-                <li>Des actions préventives, pour sensibiliser le grand public et les entreprises, éveiller les consciences, enseigner les écogestes du quotidien, améliorer les processus de production et les schémas de consommation. Parce que le meilleur déchet plastique c’est celui qu’on ne produit pas.</li>
-                <li>Des opérations de clean-ups à terre avec nos équipes de bénévoles. Parce que nettoyer c’est le meilleur moyen pour faire comprendre, mobiliser et changer les comportements.</li>
-                <li>Le soutien à la recherche et le partage des connaissances scientifiques liées à la pollution plastique vers le plus grand nombre et l’encouragement à la transition vers l’économie circulaire. Parce que, pour lutter, il faut bien comprendre.</li>
-               </ol>
-               <h2>Notre conviction : la meilleure des sensibilisations, c’est l’action !</h2>
-               <h3>A quoi vont servir vos dons ?</h3>
-               <p>Nous sommes une association de solidarité internationale. Grâce à vos dons, nous allons lutter contre la pollution plastique sur le terrain dans les pays où le besoin est le plus urgent, à commencer par l’Asie du Sud-Est.</p>
-               <p>3 missions ont été identifiées pour bénéficier des fonds de ZEvent :</p>
-               <section class="chiffre">
-                   <h4>Avec 1€</h4>
-                   <p>Tu participes à nos actions de sensibilisation à destination des communautés et des jeunes pour réduire les déchets à la source.</p>
+                    <li>Elle renforce les inégalités économiques et sociales en affectant directement les moyens de
+                        subsistance des communautés dépendantes de l’économie de la mer.</li>
+                </ul>
+                <a href="https://www.theseacleaners.org/fr/la-pollution-plastique/" target="_blank">Pour tout savoir sur
+                    les faits et chiffres de la pollution plastique, c’est par ici.</a>
+                <h3>Comment nous combattons la pollution plastique ?</h3>
+                <p>Chez The SeaCleaners, nous avons fait le choix de l’action concrète pour dire stop aux déchets qui
+                    plastifient nos océans :</p>
+                <ol>
+                    <li>Une action corrective de dépollution en mer, avec le MANTA, un bateau-usine pionnier qui prendra
+                        la mer en 2025, et collectera, traitera et valorisera les macrodéchets flottants dans les zones
+                        de forte concentration : estuaires, embouchures des fleuves les plus polluées, eaux côtières.
+                        Autonome énergétiquement à près de 75%, propulsé par des énergies renouvelables, certifié par un
+                        organisme indépendant, le MANTA sera aussi un bateau de recherche scientifique et une plateforme
+                        de sensibilisation.</li>
+                    <li>Une action curative de dépollution dans les fleuves et rivières, avec nos bateaux MOBULA, qui
+                        interceptent les déchets avant qu’ils atteignent l’océan et dont le 1er est en cours de
+                        déploiement dans la région de Dempasar (Bali, Indonésie).</li>
+                    <li>Des actions préventives, pour sensibiliser le grand public et les entreprises, éveiller les
+                        consciences, enseigner les écogestes du quotidien, améliorer les processus de production et les
+                        schémas de consommation. Parce que le meilleur déchet plastique c’est celui qu’on ne produit
+                        pas.</li>
+                    <li>Des opérations de clean-ups à terre avec nos équipes de bénévoles. Parce que nettoyer c’est le
+                        meilleur moyen pour faire comprendre, mobiliser et changer les comportements.</li>
+                    <li>Le soutien à la recherche et le partage des connaissances scientifiques liées à la pollution
+                        plastique vers le plus grand nombre et l’encouragement à la transition vers l’économie
+                        circulaire. Parce que, pour lutter, il faut bien comprendre.</li>
+                </ol>
+                <h2>Notre conviction : la meilleure des sensibilisations, c’est l’action !</h2>
+                <h3>A quoi vont servir vos dons ?</h3>
+                <p>Nous sommes une association de solidarité internationale. Grâce à vos dons, nous allons lutter contre
+                    la pollution plastique sur le terrain dans les pays où le besoin est le plus urgent, à commencer par
+                    l’Asie du Sud-Est.</p>
+                <p>3 missions ont été identifiées pour bénéficier des fonds de ZEvent :</p>
+                <section class="chiffre">
+                    <h4>Avec 1€</h4>
+                    <p>Tu participes à nos actions de sensibilisation à destination des communautés et des jeunes pour
+                        réduire les déchets à la source.</p>
                 </section>
 
-                   <section class="chiffre">
-                       <h4>Avec 3€</h4>
-                      <p>Tu participes au déploiement opérationnel de solutions de dépollution innovantes, dont nos bateaux MOBULA qui interceptent les déchets avant qu’ils atteignent l’océan, dans les rivières, les fleuves, les mangroves, etc.</p>
-                   </section>
-               <section class="chiffre">
-                   <h4>Avec 10€</h4>
-                   <p>Tu participes au financement du développement du MANTA, le bateau emblématique de la lutte contre la pollution plastique océanique qui prendra la mer en 2025.</p>
-               </section>
-               <h2>Ensemble, agissons pour protéger les océans !</h2>
-               <h3>Des questions ? </h3>
-               <p>Sous la supervision de la Fondation de France, nous nous engageons à ce que chaque euro apporté par ZEvent soit utilisé pour notre action de terrain et le développement de nos solutions concrètes de dépollution, dans le cadre de notre mission d’intérêt général.</p>
-               <a href="https://www.theseacleaners.org/fr/accueil/">Pour en savoir plus sur nous, c’est ici.</a>
-               <p>Et pour nous poser toutes vos questions :  <a href="mailto:contact@theseacleaners.org">contact@theseacleaners.org</a> ou en DM sur nos réseaux sociaux <a href="https://twitter.com/theseacleaners">Twitter</a>, <a href="https://www.facebook.com/theseacleaners/">Facebook</a>, <a href="https://www.instagram.com/theseacleaners/channel/">Instagram</a>, <a href="https://www.linkedin.com/company/theseacleaners">LinkedIn</a></p>
+                <section class="chiffre">
+                    <h4>Avec 3€</h4>
+                    <p>Tu participes au déploiement opérationnel de solutions de dépollution innovantes, dont nos
+                        bateaux MOBULA qui interceptent les déchets avant qu’ils atteignent l’océan, dans les rivières,
+                        les fleuves, les mangroves, etc.</p>
+                </section>
+                <section class="chiffre">
+                    <h4>Avec 10€</h4>
+                    <p>Tu participes au financement du développement du MANTA, le bateau emblématique de la lutte contre
+                        la pollution plastique océanique qui prendra la mer en 2025.</p>
+                </section>
+                <h2>Ensemble, agissons pour protéger les océans !</h2>
+                <h3>Des questions ? </h3>
+                <p>Sous la supervision de la Fondation de France, nous nous engageons à ce que chaque euro apporté par
+                    ZEvent soit utilisé pour notre action de terrain et le développement de nos solutions concrètes de
+                    dépollution, dans le cadre de notre mission d’intérêt général.</p>
+                <a href="https://www.theseacleaners.org/fr/accueil/">Pour en savoir plus sur nous, c’est ici.</a>
+                <p>Et pour nous poser toutes vos questions : <a
+                        href="mailto:contact@theseacleaners.org">contact@theseacleaners.org</a> ou en DM sur nos réseaux
+                    sociaux <a href="https://twitter.com/theseacleaners">Twitter</a>, <a
+                        href="https://www.facebook.com/theseacleaners/">Facebook</a>, <a
+                        href="https://www.instagram.com/theseacleaners/channel/">Instagram</a>, <a
+                        href="https://www.linkedin.com/company/theseacleaners">LinkedIn</a></p>
                 <!-- Continuer à partir d'ici -->
             </div>
-        </div>          
+        </div>
     </div>
-
-            <script src="./scripts/app.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>

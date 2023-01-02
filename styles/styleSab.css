@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
-@import url('globalSab.css');
+
+@import url('../styles/globalSab.css');
+@import url('../styles/styleSab.css');
 @import url('header.css');
+@import url('../styles/asso.css');
+@import url('../global.css');
 
+@import url('../responsive.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Cinzel&family=Cinzel+Decorative:wght@700&family=Quicksand:wght@500&display=swap');

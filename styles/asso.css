@@ -1,155 +1,219 @@
+body {
+  background-color: var(--noir_clair);
+}
+
+.associations {
+  background-color: rgba(32, 32, 32, 1);
+ 
+  color: white;
+}
+
+button {
+  line-height: 20px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+  background-color: rgba(32, 32, 32, 1);
+}
+
+/* Test onglet */
+.Tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.Tabs button {
+  border: solid white 1px;
+  border-radius: 5px;
+  padding: 1.4em;
+  -webkit-border-radius: 5px;
+}
+.Tabs button:hover {
+  background: var(--secondColor);
+  cursor: pointer;
+  color: var(--thirdColor);
+}
+
 .tab-content div {
-    width: 55%;
-    background-color: rgba(32, 32, 32, 1);
-    color: rgba(255, 255, 255, 1);
-    margin: 0 auto;
-    padding-bottom: 100px;
-    line-height: 1.5;
-    display: none;
+  width: 55%;
+  background-color: rgba(32, 32, 32, 1);
+  color: rgba(255, 255, 255, 1);
+  margin: 0 auto;
+  padding-bottom: 100px;
+  line-height: 1.6;
+  display: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
 }
 
 .tab-content div.active {
-    display: block;
+  display: block;
 }
 
-/* .middle p{
-    text-align: justify;
-} */
-.associations p , ol , ul {
-    text-align: justify;
+.associations p,
+ol,
+ul {
+  text-align: justify;
 }
-/* ********** */
-/* Test onglet */
-.Tabs {
+
+
+.container_site{
+    
     display: flex;
     justify-content: center;
-    /* grid: 10px; */
-    gap: 10px;
 }
-.Tabs button {
-    /* border: solid 1px red; */
-    border: solid white 1px;
-    border-radius: 5px;
-    padding: 1%;
-    -webkit-border-radius: 5px;
-}
-.Tabs button:hover {
-    background: var(--secondColor);
-    cursor: pointer;
-    color: var(--thirdColor);
-}
-/* fin test onglet */
-/* ***************** */
-.Tabs a {
-    color: white;
-    text-decoration: none; 
-    padding-top: 20px;
-}
+
 .site {
-    padding: 0.85em ;
-    background-color: var(--secondColor);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    color: var(--thirdColor); 
+  padding: 0.85em;
+  background-color: var(--secondColor);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: var(--thirdColor);
+  text-shadow: 1px 1px 5px var(--dark);
+ 
 }
-.site + p{
-    margin-top: 30px;
+.container_site + p {
+  margin-top: 30px;
 }
-.tab3_SeaShepherd img{
-    width: 180px;
+
+
+
+h1 {
+  font-size: 4rem;
+
+  padding: 20px;
 }
-h1{
-    font-size: 4rem;
-    font-family: 'Caveat', cursive;
-    padding: 20px ;
+h2 {
+  font-size: 3.3rem;
 }
-h2{
-    font-size: 3rem;
-}
+
 h3 {
-    font-family: 'Caveat', cursive;
-    font-size: 2rem;
-    color: var(--secondColor);
-    text-align: center;
-    margin: 20px 0 20px;
+  font-size: 2.5rem;
+  color: var(--secondColor);
+  
+  margin: 20px 0 20px;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "Caveat", cursive;
+  text-align: center;
+}
+
 /* Centrage des logos */
 img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 20px;
+  display: block;
+  margin: auto;
+
+  padding-top: 20px;
 }
 /* modification de la taille des images de logos + contour ombre autour*/
 /* Correction en cours.... */
-.seasheperd_logo, .fdf_logo, .tftp_logo, .logo_lpo, .wwf {
-    width: 25%;
-    filter: drop-shadow(2px 2px 0px var(--lightGrey));
-    -webkit-filter: drop-shadow(2px 2px 0px var(--lightGrey));
+.seasheperd_logo,
+.fdf_logo,
+.tftp_logo,
+.logo_lpo,
+.wwf,
+.theseacleaners_logo {
+  width: 25%;
+  filter: drop-shadow(2px 2px 0px var(--lightGrey));
+  -webkit-filter: drop-shadow(2px 2px 0px var(--lightGrey));
 }
-.theseacleaners_logo{
-    width: 15%;
-    filter: drop-shadow(2px 2px 0px var(--lightGrey));
-    -webkit-filter: drop-shadow(2px 2px 0px var(--lightGrey));
-}
+
 /* couleur pour les liens hypertextes */
 a {
-    color: var(--secondColor);
+  color: var(--secondColor);
 }
 
-ul, ol {
-    list-style-position: inside;
+ul,
+ol {
+  list-style-position: inside;
 }
-/* border: solid 1px red; */
+
 /* Modification couleur des pourcentage */
 .chiffre h4 {
-    color: var(--secondColor);
-    font-size: 1.5rem;
+  color: var(--secondColor);
+  font-size: 1.5rem;
 }
 .chiffre {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+  min-width: 100%;
+  
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 
-    border: solid 1px var(--thirdColor);
-    border-radius: 5px;
-    padding: 1em;
-    margin: 1em;
-    word-break: break-word;
+  border: solid 1px var(--thirdColor);
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
 }
 /* modification taille des liens vidéo */
-iframe{
-    width: 100%;
-}
-.figurelpo{
-    width: 100%;
-    display: flex;
-}
-.figurelpo img{
-    width: 100%;
+iframe {
+  width: 100%;
 }
 
 /* modification boutons WWF */
-.container_link{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    gap: 40px;
+.container_link {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 20px 0;
+  gap: 20px;
 }
 .container_link a {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.85em ;
-    background-color: var(--secondColor);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    color: var(--thirdColor);
-    text-shadow: 1px 1px 5px var(--dark);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.85em;
+  background-color: var(--secondColor);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: var(--thirdColor);
+  text-shadow: 1px 1px 5px var(--dark);
 }
+
+.liens {
+
+  display: flex;
+  justify-content: center;
+ text-decoration: underline;
+  gap: 15px;
+}
+
+
+
+.figurelpo{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.figurelpo img{
+    width: 550px;
+    margin: 0;
+  
+}
+
+.tab-content :is(a):not(.site){
+    text-decoration: underline;
+}
+
