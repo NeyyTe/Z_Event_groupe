@@ -1,7 +1,10 @@
-body{
-  background-color: var(--noir_clair);
-}
+@import url(header.css);
+@import url(global.css);
+@import url(main_homepage.css);
 
+* {
+  font-family: sans-serif;
+}
 
 .top_banner {
   background-color: var(--green);
@@ -11,20 +14,9 @@ body{
   color: white;
   text-align: center;
   font-weight: 600;
-  padding: 0.75em;
+  padding: 0.7rem;
   text-shadow: 1px 1px 4px #000000;
-  font-size: 0.85rem;
-  font-family: "Quicksand", sans-serif;
-}
-
-h2{
-  font-family: "Caveat", cursive;
-
-}
-
-a{
-  font-family: "Quicksand", sans-serif;
-  
+  font-size: 0.75rem;
 }
 
 section {
@@ -43,13 +35,15 @@ section {
   color: var(--green);
   text-align: center;
   margin: 0 0 15px;
- 
+  font-family: "Caveat", cursive;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   padding: 1em;
 }
 
-
+.container_boutique h3 {
+  font-family: "Caveat", cursive;
+}
 
 .card_boutique {
   width: 100%;
@@ -58,7 +52,6 @@ section {
   justify-content: center;
 
   flex-wrap: wrap;
-  font-family: "Quicksand", sans-serif;
 }
 
 .img_items_container {
@@ -70,6 +63,16 @@ section {
   height: 250px;
  
 }
+
+
+.slider{
+ position: relative;
+ background: url(./assets/others_img/tshirt.webp);
+ width: 20em;
+ height: 500px;
+}
+
+
 
 .card_boutique img {
   width: 100%;
@@ -84,19 +87,13 @@ section {
   width: 230px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 15px;
   padding: 0 1.2em;
 }
 
-
 .txt_items:has(h3, p) {
   color: white;
-}
-.txt_items h3{
-  font-family: "Caveat", cursive;
-  font-size: 2rem;
 }
 
 .taille_items {
@@ -126,12 +123,6 @@ section {
 .taille_items button:focus {
   background-color: var(--green);
   border: 2px solid white;
-}
-
-.quantity_container{
-  display: flex;
-  flex-direction: column;
-  gap: 0.80rem;
 }
 
 .quantity_bar {
@@ -187,15 +178,12 @@ section {
 details {
   width: 510px;
   min-height: 20px;
-
   border: 1px solid rgb(145, 106, 0);
-  margin: 2px auto;
+  margin: 0 auto;
   background-color: var(--full_noir);
   font-weight: 600;
   font-size: 0.8rem;
-  font-family: "Quicksand", sans-serif;
   border-radius: 3px;
-  
 }
 
 details > summary {
@@ -209,25 +197,21 @@ details > summary {
   background-color: var(--full_noir);
   gap: 10px;
   padding: 5px 15px;
-  font-family: "Quicksand", sans-serif;
 }
 
 details ul {
   padding: 10px;
   background-color: var(--gris_clair);
-  list-style: none;
 }
 
 details li {
   color: white;
   font-size: 0.75rem;
-  
 }
 
 details li > p {
   padding: 10px 0;
   line-height: 2;
-  
 }
 
 details a {
@@ -237,7 +221,7 @@ details a {
 .show_details {
   margin: 15px 0;
   text-decoration: underline;
- 
+  padding: 0 5%;
 }
 
 .show_details a {
@@ -249,13 +233,13 @@ details a {
 =========================================== */
 
 .assos_container {
-  width: 100%;
+  width: fit-content;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, 305px);
-justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+
   gap: 10px;
-  
+  margin: 0 auto;
 }
 
 .cards_assos {
@@ -274,7 +258,6 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
-
 }
 
 .cards_assos img {
@@ -293,7 +276,6 @@ a {
 
 .cards_assos p {
   color: var(--blanc);
-  font-family: "Quicksand", sans-serif;
 }
 
 /* ===========================================
@@ -327,13 +309,11 @@ a {
   text-align: center;
   font-size: 2rem;
   font-family: "Caveat", cursive;
-  text-shadow: 1px 1px 6px #000000a2;
 }
 
 .text_need_help p {
   padding: 3% 0;
   color: var(--blanc);
-  text-shadow: 1px 1px 6px #000000a2;
 }
 
 .text_need_help a {
@@ -346,7 +326,6 @@ a {
   color: var(--full_noir);
   font-weight: 600;
   font-size: 1.1rem;
-  box-shadow: 1px 1px 6px #000000a2;
 }
 
 .text_need_help a:hover {
@@ -384,7 +363,6 @@ a {
   color: var(--green);
   font-family: "Caveat", cursive;
   padding-bottom: 55px;
-  font-size: 2.5rem;
 }
 
 .row {

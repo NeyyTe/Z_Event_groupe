@@ -1,0 +1,192 @@
+/* 1. HEADER */
+
+/* 2. MAIN_HOMEPAGE */
+
+/* 3. BOUTIQUE */
+
+/* 4. PAGE ASSOCIATION */
+
+/* 5. FOOTER */
+
+/*
+================================================
+                   1. HEADER 
+================================================ */
+
+@media screen and (max-width: 1202px) {
+  .nav_menu {
+    display: none;
+  }
+
+  .icons_responsive {
+    min-height: 68px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    left: 100px;
+  }
+  .icons_responsive {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .icons_responsive {
+    opacity: 0;
+  }
+
+  .nav_toggle {
+    display: block;
+  }
+
+  .nav_menu {
+    position: fixed;
+    width: 100vw;
+    min-height: 25vh;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    opacity: 1;
+    background-color: var(--full_noir);
+    transform: translateY(-100%);
+    transition: 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+  }
+
+  .nav_menu ul {
+    flex-direction: column;
+  }
+
+  .nav_menu.active {
+    transform: translateY(0);
+    border-bottom: 3px solid rgba(5, 241, 16, 0.931);
+  }
+
+  .nav_menu a {
+    font-size: 1rem;
+    padding: 1em 0;
+    display: block;
+  }
+}
+
+/*
+================================================
+                2. MAIN_HOMEPAGE 
+================================================ */
+
+@media screen and (max-width: 812px) {
+  .cards_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    transition: 1s ease;
+  }
+
+  .container_main_homepage {
+    width: 100%;
+    padding: 0 5%;
+    transition: 1s ease;
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .grid_streamers {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 220px);
+    place-content: center;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .main_homepage {
+    background: linear-gradient(
+      0deg,
+      rgba(31, 31, 31, 1) 99%,
+      rgb(92, 92, 92) 100%
+    );
+  }
+}
+
+/*
+================================================
+                   3. BOUTIQUE 
+================================================ */
+
+
+@media (max-width: 1286px) {
+  .assos_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .text_need_help {
+    padding: 3%;
+  }
+}
+
+@media (max-width: 569px) {
+  .card_boutique {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .txt_items {
+    padding: 0;
+  }
+
+  details {
+    width: 100%;
+  }
+}
+
+/*
+================================================
+                  4. PAGE ASSOCIATION
+================================================ */
+
+@media screen and (max-width: 900px) {
+  .tab-content div {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .associations p,
+  ol,
+  ul {
+    text-align: start;
+  }
+ .tabs7 h2{
+  font-size: 2rem;
+ }
+  h3{
+  font-size: 2rem;
+ }
+}
+
+/*
+================================================
+                   5. FOOTER
+================================================ */
+@media (max-width: 825px) {
+  .footer-col {
+    display: flex;
+
+    align-items: flex-start;
+  }
+  .footer-col img {
+    margin: 0 auto;
+  }
+}

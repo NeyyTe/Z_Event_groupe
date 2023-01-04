@@ -5,41 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Z-Event</title>
     <link rel="shortcut icon" href="./assets/favicon/zevent-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="boutique.html">
+    <link rel="stylesheet" href="AssoSab.html">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <a href=""><img class="logo" src="./assets/logo,banner/zevent-logo.webp" alt="logo_z_event"></a>
-
+           
+            <a href="index.html"><img class="logo" src="./assets/logo,banner/zevent-logo.webp" alt="logo_z_event"></a>
+    
+            <div class="icons_responsive">
+                <div>
+                    <box-icon name='home' type='solid' color='#ffffff'></box-icon>
+                </div>
+    
+                <div>
+                    <box-icon name='building' color='#ffffff'></box-icon>
+                </div>
+    
+                <div>
+                    <box-icon type='solid' color='#ffffff' name='videos'></box-icon>
+                </div>
+    
+                <div>
+                    <box-icon name='stats' color='#ffffff'></box-icon>
+                </div>
+            </div>
+    
             <nav class="nav_menu">
-
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Les associations</a></li>
-                    <li><a href="#">Les stats</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="AssoSab.html">Les associations</a></li>
                     <li><a href="#">Les clips</a></li>
+                    <li><a href="#">Les stats</a></li>
                     <li><a href="boutique.html">Boutique</a></li>
                 </ul>
-
+    
             </nav>
-
+    
+            <button type="button" class="nav_toggle" aria-label="toggle nav">
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="line l3"></span>
+            </button>
+    
+    
+    
             <div class="social_icons">
-
+    
                 <div>
                     <a href="https://twitter.com/?lang=fr" target="_blank">
                         <box-icon type='logo' name='twitter' color="white"></box-icon>
                     </a>
                 </div>
                 <div>
-                    <box-icon name='instagram-alt' type='logo' color="white"></box-icon>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <box-icon name='instagram-alt' type='logo' color="white"></box-icon>
+                    </a>
                 </div>
                 <div>
-                    <box-icon name='reddit' type='logo' color="white"></box-icon>
+                    <a href="https://www.reddit.com/" target="_blank">
+                        <box-icon name='reddit' type='logo' color="white"></box-icon>
+                    </a>
                 </div>
             </div>
         </header>
@@ -112,7 +144,7 @@
 
 
             <div class="title_les_streamers">
-                <h2>Les Streamers</h2>
+                <h2>Les streamers</h2>
             </div>
             <div class="grid_streamers">
 
@@ -601,7 +633,7 @@
 
     <script src="https://kit.fontawesome.com/e9b4435ed4.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="js.js"></script>
+    <script src="./scripts/js.js"></script>
 </body>
 
 </html>
