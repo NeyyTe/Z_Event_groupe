@@ -1,3 +1,11 @@
+
+
+/* 4. FOOOTER */
+
+
+/* ===========================================
+             1. Associations cards
+=========================================== */
 body{
   background-color: var(--noir_clair);
 }
@@ -11,7 +19,7 @@ body{
   color: white;
   text-align: center;
   font-weight: 600;
-  padding: 0.75em;
+  padding: 0.65em;
   text-shadow: 1px 1px 4px #000000;
   font-size: 0.85rem;
   font-family: "Quicksand", sans-serif;
@@ -48,7 +56,6 @@ section {
   font-size: 2.5rem;
   padding: 1em;
 }
-
 
 
 .card_boutique {
@@ -107,7 +114,7 @@ section {
 }
 
 .taille_items button {
-  width: 38px;
+  width: 40px;
   height: 35px;
   background-color: white;
   border-radius: 5px;
@@ -245,7 +252,7 @@ details a {
 }
 
 /* ===========================================
-              Associations cards
+             2. Associations cards
 =========================================== */
 
 .assos_container {
@@ -297,7 +304,7 @@ a {
 }
 
 /* ===========================================
-              BESOIN D'AIDE ? Et Image
+             3. BESOIN D'AIDE ? Et Image
 =========================================== */
 
 .need_help_container {
@@ -362,7 +369,7 @@ a {
 }
 
 /* ===========================================
-                  FOOOTER
+                 4. FOOOTER
 =========================================== */
 
 .footer {

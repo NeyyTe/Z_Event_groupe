@@ -72,8 +72,9 @@
   .nav_menu.active {
     transform: translateY(0);
     border-bottom: 3px solid rgba(5, 241, 16, 0.931);
+    top: 100px;
   }
-
+  
   .nav_menu a {
     font-size: 1rem;
     padding: 1em 0;
@@ -151,6 +152,7 @@
   details {
     width: 100%;
   }
+ 
 }
 
 /*
