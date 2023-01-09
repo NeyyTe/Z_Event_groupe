@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/TP-WEB/Desktop/Z_Event_groupe"
+		},
+		{
+			"path": "ZEvent_html_css/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Z_Event_groupe"
+	}
+}
